@@ -1,0 +1,7 @@
+.app-container {
+  color: $primaryColor;
+  @include poly-fluid-sizing('font-size', ($mobile: 22px, $tablet: 24px, $desktop: 34px));
+  @include mq($from:desktop) {
+    background:blue;
+  }
+}
