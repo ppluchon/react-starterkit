@@ -29,6 +29,6 @@ I reccomend to follow the Standard Code Style for better readability
 * `yarn dev` : start the dashboard
 * `yarn stats` : create a profile of your application usable by [Webpack Visualizer](https://chrisbateman.github.io/webpack-visualizer/)
 * `yarn build`
-*
+
 # TODO :
 - implement a simple react-router exemple
