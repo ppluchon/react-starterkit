@@ -1,11 +1,44 @@
 {
   "presets": [
-    ["env", {
-      "targets": {
-        "browsers": ["last 3 versions", "safari >= 7"]
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": [
+            "last 3 versions",
+            "safari >= 8",
+            "ie >= 11"
+          ]
+        },
+        "modules": false,
+        "useBuiltIns": true,
+        "loose": true,
+        "debug": false
       }
-    }],
-    "react",
-    "stage-0"
+    ],
+    "@babel/preset-react"
+  ],
+  "plugins": [
+    [
+      "module:fast-async"
+    ],
+    [
+      "@babel/plugin-proposal-decorators",
+      {
+        "legacy": true
+      }
+    ],
+    [
+      "@babel/plugin-proposal-class-properties",
+      {
+        "loose": true
+      }
+    ],
+    [
+      "@babel/plugin-proposal-object-rest-spread",
+      {
+        "loose": true
+      }
+    ]
   ]
 }

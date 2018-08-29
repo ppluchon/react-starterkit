@@ -7,7 +7,6 @@ module.exports = {
         'last 3 version',
         'ie >= 10'
       ]
-    },
-    'cssnano': {}
+    }
   }
 }

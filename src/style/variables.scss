@@ -1,17 +1,11 @@
-$primaryColor: rgb(200,31,31);
-
 /**
- * BREAKPOINTS
+ * COLORS
  */
+$primaryColor: #000000;
+$bodyColor: #344230;
+$borderColor: #C2C2C2;
 
- $mobile:  320px;
- $tablet:  740px;
- $desktop: 980px;
- $wide:    1300px;
+$gutter: 20px;
 
- $mq-breakpoints: (
-     mobile:  $mobile,
-     tablet:  $tablet,
-     desktop: $desktop,
-     wide:    $wide
- );
+$font : 'Roboto', sans-serif;
+

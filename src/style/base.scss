@@ -1,4 +1,14 @@
-body {
-  margin: 0;
-  color: $primaryColor;
+html {
+  touch-action: none;
+
+  body {
+    margin: 0;
+    color: $primaryColor;
+    font-family: $font;
+  }
+}
+
+
+#app {
+  
 }
