@@ -6,7 +6,7 @@ A minimal React JS application starter kit.
 # Installation
 - You might want to use my [bash script](https://gist.github.com/ppluchon/cc4ffc5423b544b07601a8ea7c7cc347) to automatically clone the repo and install the dependencies.
 - Just run `createProject` in your terminal to start it,
-- and then `yarn dev`
+- and then `yarn dev` !
 
 *Or you can manually clone it and install the dependencies.*
 
