@@ -1,0 +1,9 @@
+{
+  "parserOptions": {
+      "ecmaVersion": 7,
+  },
+  "globals": {
+    "Raven": true
+  },
+  "extends": ["standard", "standard-react"]
+}
