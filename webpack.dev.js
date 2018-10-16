@@ -9,7 +9,13 @@ const sourcePath = path.resolve('./src')
 module.exports = merge(common, {
   mode: 'development',
   devtool: 'cheap-module-eval-source-map',
-  plugins: [],
+  plugins: [
+    new webpack.HotModuleReplacementPlugin(
+      {
+        // Options...
+      }
+    )
+  ],
   module: {
     rules: [
       {
@@ -41,5 +47,15 @@ module.exports = merge(common, {
         ]
       }
     ]
+  },
+  devServer: {
+    contentBase: '/src/assets/',
+    publicPath: '/',
+    clientLogLevel: 'warning',
+    open: true,
+    hot: true,
+    host: '0.0.0.0',
+    overlay: true,
+    quiet: true
   }
 })

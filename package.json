@@ -7,7 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "stats": "webpack --profile --config ./webpack.prod.js --json > stats.json",
-    "dev": "webpack-serve --log-level warn --config ./webpack.dev.js",
+    "dev": "webpack-dev-server --config ./webpack.dev.js",
     "build": "rimraf build/ && webpack -p --config ./webpack.prod.js"
   },
   "dependencies": {
@@ -59,6 +59,7 @@
     "postcss-cssnext": "^3.1.0",
     "postcss-import": "^11.0.0",
     "postcss-loader": "^2.0.6",
+    "progress-bar-webpack-plugin": "^1.11.0",
     "raw-loader": "^0.5.1",
     "rimraf": "^2.6.2",
     "sass-loader": "^6.0.6",
@@ -70,10 +71,9 @@
     "url-loader": "^1.0.1",
     "webpack": "^4.17.1",
     "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.9",
     "webpack-merge": "^4.1.2",
-    "webpack-node-externals": "^1.7.2",
-    "webpack-serve": "^2.0.1",
-    "webpackbar": "^2.6.1"
+    "webpack-node-externals": "^1.7.2"
   },
   "standard": {
     "parser": "babel-eslint"

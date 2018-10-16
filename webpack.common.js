@@ -1,8 +1,8 @@
 const path = require('path')
-
+const webpack = require('webpack')
 const DirectoryNamedWebpackPlugin = require('directory-named-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
-const WebpackBar = require('webpackbar')
+const ProgressBarPlugin = require('progress-bar-webpack-plugin')
 
 const jsSourcePath = path.resolve('src')
 const buildPath = path.resolve('./build')
@@ -92,15 +92,7 @@ module.exports = {
       path: buildPath,
       filename: 'index.html'
     }),
-    new WebpackBar()
-  ],
-  serve: {
-    content: '/src/assets/',
-    dev: {
-      publicPath: '/'
-    },
-    open: true,
-    port: 3000,
-    host: 'localhost'
-  }
+
+    new ProgressBarPlugin()
+  ]
 }
